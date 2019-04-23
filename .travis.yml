@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: CsmxHSEyU+fuGMpwwG3rHIOlGmPC/x71ODit99nwyTYDxGZd0X5usSmIBF9+ye2AI1wlyq1nsr2DDq1vABeGunztACvUkkcc5A+HFIBZNkc0S/i+q0Hdp3W7s6wHiHYRfqMZa2MRCYObGYliGVZmTF5x4DAFKzDa8M2tLko2yQrNhFNAR5bcbRfygr5ymPF/a+My+Wl3s2fBw3dR9R9VpRPZ7G3Y59xJvOZWxhzuygjlbU1Grllnl4EuCR5PDM5b3yYn2z4fvZqBlr1RItP983L2hdoFVgrYgdqvRV4TIeqgL9PlQB0UNgxqzvoFrN/ZmOJruIWqbe1xzYxWRXWXkRIPZcwxSomdI41DPpkPXk4JSNdRkLFckNUuuv1Sf0IufKZpWyM9PkLEON2l4Fs6o2M/BA7MM5GzE1rsg5j0iQCZmvaxCstdmfSjetbc9qWv9EuH3WTQER11L1oNJqA3C0ozQL8bVw13I5Wn3UOo8MKN2lOa56k+ltABKd9nhg5fciWEP+Re3HLGKSxy9YK7IHtBlYyAIpPcLFZBAJ8Uy1ov30EQuhOP4T5I738WvNpar5Mot+7WdeWoy/ZMOVafEAjjry7KDCAqyHHOS06mqdELRWIqkUzcvGWtGYC/Oj11F7bbQS4aWCXjDnHifYFAu3R4z3tNhOaAF51B/S1gaGM=
+  app: still-falls-77161
+  on:
+    repo: lightsage88/react-trello-testing
